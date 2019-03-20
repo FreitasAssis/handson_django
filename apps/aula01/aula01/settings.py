@@ -29,9 +29,9 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
-MY_APPS = ['geo', 'editais']
+MY_APPS = ['geo', 'processo_seletivo']
 LIBS_APPS = []
-DEBUG_APPS = []
+DEBUG_APPS = ['django_extensions']
 THIRD_APPS = []
 DJANGO_APPS = [
     'django.contrib.admin',
@@ -44,6 +44,8 @@ DJANGO_APPS = [
 
 INSTALLED_APPS = MY_APPS + LIBS_APPS + DEBUG_APPS + THIRD_APPS + DJANGO_APPS
 
+ROOT_URLCONF = 'aula01.urls'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -53,8 +55,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-ROOT_URLCONF = 'aula01.urls'
 
 TEMPLATES = [
     {
@@ -108,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-BR'
 
 TIME_ZONE = 'UTC'
 
